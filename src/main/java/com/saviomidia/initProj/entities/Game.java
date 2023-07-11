@@ -31,15 +31,18 @@ public class Game {
 	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 	
+public Game() {
+	
+}
+	
 	public Game(Long id, Integer year, String title, String genre, String platforms, String imgUrl,
 			String shortDescription, String longDescription, Double score) {
-		super();
 		this.id = id;
-		this.year = year;
 		this.title = title;
+		this.year = year;
 		this.genre = genre;
-		this.score = score;
 		this.platforms = platforms;
+		this.score = score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
